@@ -1,0 +1,250 @@
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-coy&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=line-numbers */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+pre.theme-coy code[class*="language-"],
+pre[class*="language-"].theme-coy {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"].theme-coy {
+	position: relative;
+	margin: .5em 0;
+	overflow: visible;
+	padding: 0;
+}
+pre[class*="language-"].theme-coy>code {
+	position: relative;
+	border-left: 10px solid #358ccb;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	background-attachment: local;
+}
+
+pre.theme-coy code[class*="language-"] {
+	max-height: inherit;
+	height: inherit;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accommodate shadow */
+pre[class*="language-"].theme-coy {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}	 
+
+pre[class*="language-"].theme-coy:before,
+pre[class*="language-"].theme-coy:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+pre[class*="language-"].theme-coy:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+pre.theme-coy .token.comment,
+pre.theme-coy .token.block-comment,
+pre.theme-coy .token.prolog,
+pre.theme-coy .token.doctype,
+pre.theme-coy .token.cdata {
+	color: #7D8B99;
+}
+
+pre.theme-coy .token.punctuation {
+	color: #5F6364;
+}
+
+pre.theme-coy .token.property,
+pre.theme-coy .token.tag,
+pre.theme-coy .token.boolean,
+pre.theme-coy .token.number,
+pre.theme-coy .token.function-name,
+pre.theme-coy .token.constant,
+pre.theme-coy .token.symbol,
+pre.theme-coy .token.deleted {
+	color: #c92c2c;
+}
+
+pre.theme-coy .token.selector,
+pre.theme-coy .token.attr-name,
+pre.theme-coy .token.string,
+pre.theme-coy .token.char,
+pre.theme-coy .token.function,
+pre.theme-coy .token.builtin,
+pre.theme-coy .token.inserted {
+	color: #2f9c0a;
+}
+
+pre.theme-coy .token.operator,
+pre.theme-coy .token.entity,
+pre.theme-coy .token.url,
+pre.theme-coy .token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+pre.theme-coy .token.atrule,
+pre.theme-coy .token.attr-value,
+pre.theme-coy .token.keyword,
+pre.theme-coy .token.class-name {
+	color: #1990b8;
+}
+
+pre.theme-coy .token.regex,
+pre.theme-coy .token.important {
+	color: #e90;
+}
+
+pre.theme-coy .language-css .token.string,
+pre.theme-coy .style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+pre.theme-coy .token.important {
+	font-weight: normal;
+}
+
+pre.theme-coy .token.bold {
+	font-weight: bold;
+}
+pre.theme-coy .token.italic {
+	font-style: italic;
+}
+
+pre.theme-coy .token.entity {
+	cursor: help;
+}
+
+pre.theme-coy .token.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"].theme-coy:before,
+	pre[class*="language-"].theme-coy:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].theme-coy.line-numbers.line-numbers {
+	padding-left: 0;
+}
+
+pre[class*="language-"].theme-coy.line-numbers.line-numbers code {
+	padding-left: 3.8em;
+}
+
+pre[class*="language-"].theme-coy.line-numbers.line-numbers .line-numbers-rows {
+	left: 0;
+}
+
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line].theme-coy {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+pre[data-line].theme-coy code {
+	position: relative;
+	padding-left: 4em;
+}
+pre.theme-coy .line-highlight {
+	margin-top: 0;
+}
+
+pre[class*="language-"].theme-coy.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].theme-coy.line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+pre.theme-coy.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+pre.theme-coy .line-numbers-rows > span {
+	display: block;
+	counter-increment: linenumber;
+}
+
+pre.theme-coy .line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
+

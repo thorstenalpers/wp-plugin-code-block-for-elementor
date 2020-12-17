@@ -1,0 +1,176 @@
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=line-numbers */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+pre.theme-default code[class*="language-"],
+pre[class*="language-"].theme-default {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"].theme-default::-moz-selection, pre[class*="language-"].theme-default ::-moz-selection,
+pre.theme-default code[class*="language-"]::-moz-selection, pre.theme-default code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"].theme-default::selection, pre[class*="language-"].theme-default ::selection,
+pre.theme-default code[class*="language-"]::selection, pre.theme-default code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	pre.theme-default code[class*="language-"],
+	pre[class*="language-"].theme-default {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"].theme-default {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+pre[class*="language-"].theme-default {
+	background: #f5f2f0;
+}
+
+pre.theme-default .token.comment,
+pre.theme-default .token.prolog,
+pre.theme-default .token.doctype,
+pre.theme-default .token.cdata {
+	color: slategray;
+}
+
+pre.theme-default .token.punctuation {
+	color: #999;
+}
+
+pre.theme-default .token.namespace {
+	opacity: .7;
+}
+
+pre.theme-default .token.property,
+pre.theme-default .token.tag,
+pre.theme-default .token.boolean,
+pre.theme-default .token.number,
+pre.theme-default .token.constant,
+pre.theme-default .token.symbol,
+pre.theme-default .token.deleted {
+	color: #905;
+}
+
+pre.theme-default .token.selector,
+pre.theme-default .token.attr-name,
+pre.theme-default .token.string,
+pre.theme-default .token.char,
+pre.theme-default .token.builtin,
+pre.theme-default .token.inserted {
+	color: #690;
+}
+
+pre.theme-default .token.operator,
+pre.theme-default .token.entity,
+pre.theme-default .token.url,
+pre.theme-default .language-css .token.string,
+pre.theme-default .style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+pre.theme-default .token.atrule,
+pre.theme-default .token.attr-value,
+pre.theme-default .token.keyword {
+	color: #07a;
+}
+
+pre.theme-default .token.function,
+pre.theme-default .token.class-name {
+	color: #DD4A68;
+}
+
+pre.theme-default .token.regex,
+pre.theme-default .token.important,
+pre.theme-default .token.variable {
+	color: #e90;
+}
+
+pre.theme-default .token.important,
+pre.theme-default .token.bold {
+	font-weight: bold;
+}
+pre.theme-default .token.italic {
+	font-style: italic;
+}
+
+pre.theme-default .token.entity {
+	cursor: help;
+}
+
+pre[class*="language-"].theme-default.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].theme-default.line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+pre.theme-default.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+pre.theme-default .line-numbers-rows > span {
+	display: block;
+	counter-increment: linenumber;
+}
+
+pre.theme-default .line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
+

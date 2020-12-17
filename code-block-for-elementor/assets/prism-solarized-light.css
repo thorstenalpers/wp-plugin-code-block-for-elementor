@@ -1,0 +1,186 @@
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=line-numbers */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+pre.theme-solarized-light code[class*="language-"],
+pre[class*="language-"].theme-solarized-light {
+	color: #657b83; /* base00 */
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"].theme-solarized-light::-moz-selection, pre[class*="language-"].theme-solarized-light ::-moz-selection,
+pre.theme-solarized-light code[class*="language-"]::-moz-selection, pre.theme-solarized-light code[class*="language-"] ::-moz-selection {
+	background: #073642; /* base02 */
+}
+
+pre[class*="language-"].theme-solarized-light::selection, pre[class*="language-"].theme-solarized-light ::selection,
+pre.theme-solarized-light code[class*="language-"]::selection, pre.theme-solarized-light code[class*="language-"] ::selection {
+	background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"].theme-solarized-light {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+pre[class*="language-"].theme-solarized-light {
+	background-color: #fdf6e3; /* base3 */
+}
+
+pre.theme-solarized-light .token.comment,
+pre.theme-solarized-light .token.prolog,
+pre.theme-solarized-light .token.doctype,
+pre.theme-solarized-light .token.cdata {
+	color: #93a1a1; /* base1 */
+}
+
+pre.theme-solarized-light .token.punctuation {
+	color: #586e75; /* base01 */
+}
+
+pre.theme-solarized-light .token.namespace {
+	opacity: .7;
+}
+
+pre.theme-solarized-light .token.property,
+pre.theme-solarized-light .token.tag,
+pre.theme-solarized-light .token.boolean,
+pre.theme-solarized-light .token.number,
+pre.theme-solarized-light .token.constant,
+pre.theme-solarized-light .token.symbol,
+pre.theme-solarized-light .token.deleted {
+	color: #268bd2; /* blue */
+}
+
+pre.theme-solarized-light .token.selector,
+pre.theme-solarized-light .token.attr-name,
+pre.theme-solarized-light .token.string,
+pre.theme-solarized-light .token.char,
+pre.theme-solarized-light .token.builtin,
+pre.theme-solarized-light .token.url,
+pre.theme-solarized-light .token.inserted {
+	color: #2aa198; /* cyan */
+}
+
+pre.theme-solarized-light .token.entity {
+	color: #657b83; /* base00 */
+	background: #eee8d5; /* base2 */
+}
+
+pre.theme-solarized-light .token.atrule,
+pre.theme-solarized-light .token.attr-value,
+pre.theme-solarized-light .token.keyword {
+	color: #859900; /* green */
+}
+
+pre.theme-solarized-light .token.function,
+pre.theme-solarized-light .token.class-name {
+	color: #b58900; /* yellow */
+}
+
+pre.theme-solarized-light .token.regex,
+pre.theme-solarized-light .token.important,
+pre.theme-solarized-light .token.variable {
+	color: #cb4b16; /* orange */
+}
+
+pre.theme-solarized-light .token.important,
+pre.theme-solarized-light .token.bold {
+	font-weight: bold;
+}
+pre.theme-solarized-light .token.italic {
+	font-style: italic;
+}
+
+pre.theme-solarized-light .token.entity {
+	cursor: help;
+}
+
+pre[class*="language-"].theme-solarized-light.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].theme-solarized-light.line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+pre.theme-solarized-light.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+pre.theme-solarized-light .line-numbers-rows > span {
+	display: block;
+	counter-increment: linenumber;
+}
+
+pre.theme-solarized-light .line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
+
