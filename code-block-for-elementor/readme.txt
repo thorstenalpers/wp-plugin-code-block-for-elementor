@@ -36,6 +36,11 @@ Create a feature request on GitHub: https://github.com/thorstenalpers/wp-plugin-
 
 Currently there is no admin UI, but you could modify the code-block.php file from line 101 to 406 of this plugin, so that you see only a few languages. 
 
+== Screenshots ==
+
+1. Elementor code block settings.
+2. Rendered code block.
+
 == Changelog ==
 = 1.0.0 - 16-12-2020 =
 - Added: Initial release
