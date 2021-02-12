@@ -1,22 +1,19 @@
 === Code Block Syntax Highlighter for Elementor ===
-
-Plugin Name: Code Block Syntax Highlighter for Elementor
-Tags: elementor, code, code block, syntax highlight, prismjs, prism, prism.js, snippets, syntax, highlight, language
-Version: 1.0.0
-Stable tag: 1.0.0
+Contributors: netninja2202
+Tags: code, elementor, syntax highlight, code highlighting
+Version: 1.0.1
+Stable tag: 1.0.1
 Author: Thorsten Alpers
 Requires at least: 5.0
 Tested up to: 5.6
+Requires PHP: 5.6
 License: MIT
 
-An Elementor widget which adds syntax highlighting to your site with PrismJS 1.22.0.
-This plugin is free and is open source under the MIT license.
+This is an drag & drop widget for syntax highlighting of code blocks.
 
 == Description ==
-This is an drag & drop widget for elementor. 
+Code Block Syntax Highlighter for Elementor is an Elementor widget which adds code blocks with prism.js syntax highlighting to your website.
 All languages and themes of Prism.js 1.22.0 are supported. 
-
-== Features ==
 
 * Elementor widget to highlight code snippets
 * All prism.js languages are supported
@@ -42,5 +39,11 @@ Currently there is no admin UI, but you could modify the code-block.php file fro
 2. Rendered code block.
 
 == Changelog ==
+= 1.0.1 - 12-02-2020 =
+Improved description
 = 1.0.0 - 16-12-2020 =
-- Added: Initial release
+Added: Initial release
+
+== Upgrade Notice ==
+= 1.0.1 =
+Improved description
