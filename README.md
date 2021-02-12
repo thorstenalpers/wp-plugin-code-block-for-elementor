@@ -3,6 +3,8 @@
 An Elementor widget which adds syntax highlighting to your site with PrismJS 1.22.0.
 This plugin is free and is open source under the MIT license.
 
+https://wordpress.org/plugins/code-block-for-elementor
+
 ## Screenshots
 
 
