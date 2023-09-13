@@ -63,7 +63,7 @@ class Code_Block_Widget extends Widget_Base {
 	/**
 	 * Register controls.
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'controls_section',
