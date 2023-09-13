@@ -134,7 +134,7 @@ final class CodeBlockForElementor {
 		require_once( __DIR__ . '/widgets/code-block.php' );
 
 		// Register widget
-		$widgets_manager->register( new \Code_Block_Widget() );
+		$widgets_manager->register( new Code_Block_Widget() );
 
 	}
 
