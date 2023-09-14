@@ -5,7 +5,7 @@
  * Plugin Name: Code Block Syntax Highlighter for Elementor
  * Description: A syntax highlighter for Elementor
  * Plugin URI:  https://github.com/thorstenalpers/wp-plugin-code-block-for-elementor
- * Version:     1.0.0
+ * Version:     1.0.3
  * Author:      Thorsten Alpers
  * Author URI:  https://thorstenalpers.github.io
  * Text Domain: code-block-for-elementor
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define('CODE_BLOCK_FOR_ELEMENTOR_PLUGIN_NAME', 'code-block-for-elementor');
-define('CODE_BLOCK_FOR_ELEMENTOR_VERSION', '1.0.0');
+define('CODE_BLOCK_FOR_ELEMENTOR_VERSION', '1.0.3');
 define('CODE_BLOCK_FOR_ELEMENTOR_ICON', 'eicon-code-bold');
 define('CODE_BLOCK_FOR_ELEMENTOR_TITLE', 'Code Block');
 

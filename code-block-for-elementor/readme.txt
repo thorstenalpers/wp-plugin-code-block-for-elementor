@@ -1,11 +1,11 @@
 === Code Block Syntax Highlighter for Elementor ===
 Contributors: netninja2202
 Tags: code, elementor, syntax highlight, code highlighting
-Version: 1.0.1
-Stable tag: 1.0.1
+Version: 1.0.3
+Stable tag: 1.0.3
 Author: Thorsten Alpers
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 6.3.1
 Requires PHP: 5.6
 License: MIT
 
