@@ -47,3 +47,7 @@ Added: Initial release
 == Upgrade Notice ==
 = 1.0.1 =
 Improved description
+
+== Upgrade Notice ==
+= 1.0.3 =
+bugfix:  Plugin breaks with Elementor 3.16
