@@ -37,12 +37,12 @@ final class CodeBlockForElementor {
 	/**
 	 * Minimum Elementor Version
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '2.0.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.10.0';
 
 	/**
 	 * Minimum PHP Version
 	 */
-	const MINIMUM_PHP_VERSION = '5.0';
+	const MINIMUM_PHP_VERSION = '7.3';
 
 	/**
 	 * Instance
@@ -121,31 +121,23 @@ final class CodeBlockForElementor {
 		$this->i18n();
 
 		// Add Plugin actions
-		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
-		add_action( 'elementor/controls/controls_registered', [ $this, 'init_controls' ] );
+		add_action( 'elementor/widgets/register', [ $this, 'init_widgets' ] );
 
 	}
 
 	/**
 	 * Init Widgets
 	 */
-	public function init_widgets() {
+	public function init_widgets( $widgets_manager ) {
 
 		// Include Widget files
 		require_once( __DIR__ . '/widgets/code-block.php' );
 
 		// Register widget
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Code_Block_Widget() );
+		$widgets_manager->register( new Code_Block_Widget() );
 
 	}
 
-	/**
-	 * Init Controls
-	 */
-	public function init_controls() {
-
-	}
-	
 	/**
 	 * Admin notice
 	 */
